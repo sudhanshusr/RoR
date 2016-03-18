@@ -1,0 +1,14 @@
+AllCops:
+  Include:
+    - '**/**/*.rb'
+    - '**/config.ru'
+  Exclude:
+    - 'bin/**/'
+    - 'config/**/*'
+    - 'script/**/*'
+    - !ruby/regexp /old_and_unused\.rb$/
+    - 'vendor/**/*'
+    - 'tmp/**/*'
+    - 'db/**/*'
+Rails:
+  Enabled: true
